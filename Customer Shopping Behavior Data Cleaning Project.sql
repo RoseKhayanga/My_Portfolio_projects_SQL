@@ -1,4 +1,4 @@
--- Data Cleaning and Data Exploration
+-- Data Cleaning 
 
 -- DATASET Consumer Behavior Kaggle
 -- aiding businesses in crafting targeted marketing strategies, optimizing product offerings, and enhancing overall customer satisfaction.
@@ -43,7 +43,8 @@ FROM (
                   `Previous Purchases`,`Payment Method`,`Frequency of Purchases`) AS row_num
       FROM  shopping_behaviour.shopping_behavior1        
        ) duplicates
-WHERE  row_num>1;
+WHERE  row_num > 1;
+
 -- Method 2
      
 SELECT `Customer ID`,`Age`,`Gender`,`Item Purchased`,`Category`,`Purchase Amount (USD)`,`Location`,`Size`,`Color`,`Season`,

@@ -85,7 +85,7 @@ FROM layoffs_staging2
 GROUP BY dates
 ORDER BY dates ASC;
 
--- now use it in a CTE so we can query off of it
+-- Use it in a CTE so we can query off of it
 WITH DATE_CTE AS 
 (
 SELECT SUBSTRING(date,1,7) as dates, SUM(total_laid_off) AS total_laid_off

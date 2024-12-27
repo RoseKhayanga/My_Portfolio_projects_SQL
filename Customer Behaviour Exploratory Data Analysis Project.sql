@@ -30,7 +30,6 @@ SET `Age Group` = CASE
     ELSE 'Out of Range' 
 END;
 
-
 SELECT *
 FROM shopping_behaviour.shopping_behavior1;
 

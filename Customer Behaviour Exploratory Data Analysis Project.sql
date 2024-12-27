@@ -1,4 +1,10 @@
 -- Exploratory Data Analysis
+
+-- DATASET Consumer Behavior Kaggle
+-- aiding businesses in crafting targeted marketing strategies, optimizing product offerings, and enhancing overall customer satisfaction.
+
+-- Skills used:CTE's, Derived Tables, Windows Functions, Aggregate Functions, 
+
 USE shopping_behaviour;
 
 SELECT *
@@ -9,12 +15,7 @@ SELECT DISTINCT age
 FROM shopping_behaviour.shopping_behavior1
 ORDER BY 1;
 
-
-ALTER TABLE shopping_behaviour.shopping_behavior1
-ADD age_groups INT;
-
-ALTER TABLE shopping_behaviour.shopping_behavior1
-DROP COLUMN age_groups;
+-- Group ages for a unified analysis
 
 ALTER TABLE shopping_behaviour.shopping_behavior1
 ADD COLUMN `Age Group` VARCHAR(10); 
@@ -33,8 +34,6 @@ END;
 SELECT *
 FROM shopping_behaviour.shopping_behavior1;
 
--- DATASET Consumer Behavior Kaggle
--- aiding businesses in crafting targeted marketing strategies, optimizing product offerings, and enhancing overall customer satisfaction.
 
 -- A Customer Segmentation
 
@@ -66,7 +65,7 @@ GROUP BY
 ORDER BY 
     `Age Group`DESC, `Total Purchase Amount` DESC;
     
--- To fing the rolling Total purchases for each age group
+-- To find the rolling Total purchases for each age group
 
 -- a) Using CTE'S 
 
@@ -176,7 +175,7 @@ ORDER BY
     
 -- Montana has the highest purchases and purchase amount
 
--- to fing top items sold in each location
+-- to find top items sold in each location
 
 SELECT 
     `Location`,

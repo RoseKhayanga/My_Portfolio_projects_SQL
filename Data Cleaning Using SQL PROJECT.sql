@@ -1,3 +1,8 @@
+# Data Cleaning SQL project
+
+This project highlights my skills in Sql for data cleaning
+
+
 USE world_layoffs;
 
 SELECT *

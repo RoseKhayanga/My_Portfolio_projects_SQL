@@ -135,11 +135,3 @@ Based on the analysis,I recommend the following:
 ---
 I used data analyst chat gtp sql optimization to help ease coding setbacks
   
-
-
-
-
-
-
- 
-  - 
